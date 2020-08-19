@@ -27,10 +27,10 @@ There are three components to the system which work together.
 
 2. Middlware
 
-- Used as a fascilitate moving the football data between the scraper and the mobile app
+- Used to decouple the web scraper and the mobile app.  The scraper works continuously to deposit data into the middleware server so it is readily available for queries from the mobile app
 - Written in Scala
 - GraphQL endpoint
-- Stores data in memory but plans to use a persistence data store
+- Stores data in memory but could be improved to use a persistent data store
 - Has GraphiQL page to aid development and debugging
 
 
